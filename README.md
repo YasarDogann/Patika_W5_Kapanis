@@ -13,22 +13,24 @@ Bu proje, aşağıdaki konuları öğrenmeye yardımcı olmak için tasarlanmı�
 
 
 ## İstenilen Görev
-![BXy5S-K-movie-9pvmdtvz4cb0xl37](https://github.com/user-attachments/assets/2d2f8170-1bc3-42a3-a725-87c57fbf6885)
-![YxJF9NG-imdblist](https://github.com/user-attachments/assets/28dbbe0e-603c-4721-970a-734626ae79ed)
+Bir araba fabrikasonda araba üretiyoruz.
 
-Aşağıda belirtilen adımları gerçekleştirerek bir Imdb - Film Listesi oluşturuyoruz
-- Sinema Filmlerini listeleyeceğimiz bir liste oluşturalım
-- Film için propertyler -> Imdb Puanı (Double) - İsmi
-- Kullanıcıdan sınırsız sayıda film adı ve imdb puanı isteyip bu bilgilerle nesneler oluşturulup liste doldurulacak.
-- Kullanıcıya her film eklemesinden sonra yeni bir film eklemek isteyip istemediği sorulsun. Kullanıcı evet cevabını verirse döngüde başa dönülerek yeni bir film oluşturulup ilgili listeye aktarılsın. Hayır cevabı verilirse program aşağıdaki çıktıları ayrı ayrı sunarak sonlandırılsın.
+Araba -> Üretim Tarihi, Seri Numarası, Marka, Model, Renk, Kapı Sayısı
+Yukarıdaki propertylere sahip bir Araba classı tanımlayalım.
 
-Uygulamanın sonunda
+    Program akışı:
 
- 1- Bütün filmler listelensin.
- 
- 2- Imdb puanı 4 ile 9 arasında olan bütün filmler listelensin.
- 
- 3- İsmi 'A' ile başlayan filmler ve imdb puanları listelensin.
+    1- Konsol ekranından kullanıcıya araba üretmek isteyip istemediğini soralım. Üretmek istiyorsa e, istemiyorsa h harfi ile yanıt versin. Büyük - Küçük harf duyarlılığını ortadan kaldıralım. Geçersiz bir cevap verirse, bu cevabın geçersiz olduğunu söyleyerek aynı soruyu tekrar yöneltelim.
+
+    2- Kullanıcının cevabı hayır programı sonlandıralım, evet ise bir araba nesnesi üretip özelliklerini konsol ekranından kullanıcıya girdirelim.
+
+    3- Üretim Tarihi değeri araba üretilirken otomatik olarak o an olarak atanacak.
+
+    4- Kapı Sayısı için sayısal olmayan bir değer atanılmaya çalışılırsa programın exception fırlatmasını engelleyelim, uyarı mesajı verelim ve kullanıcıyı yeniden o satıra yönlendirelim. (goto komutunu araştırınız.)
+
+    5- Oluşturulan araba nesnesini arabalar isimli bir listeye atayınız.
+
+    6- Kullanıcıya başka araba oluşturmak isteyip istemediğini sorunuz, evet ise program akışında 2. aşamaya geri dönünüz ve yeni bir araba üretip listeye ekleyiniz. Cevap hayır ise arabalar listesinin bütün elemanlarının Seri numaralarını ve markalarını yazdırınız
 
 ## Doğru Çalışınca Oluşan Ekran Görüntüsü
 ![resim](https://github.com/user-attachments/assets/0b296abb-a49d-4161-b97b-f5501a1815cb)
