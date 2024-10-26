@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week5\\patika_w5_Kapanis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60B66691-2798-40B1-B687-D9563E5900A4}|patika_w5_Kapanis\\patika_w5_Kapanis.csproj|c:\\users\\yasar\\source\\repos\\patika\u002B\\week5\\patika_w5_kapanis\\patika_w5_kapanis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60B66691-2798-40B1-B687-D9563E5900A4}|patika_w5_Kapanis\\patika_w5_Kapanis.csproj|solutionrelative:patika_w5_kapanis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60B66691-2798-40B1-B687-D9563E5900A4}|patika_w5_Kapanis\\patika_w5_Kapanis.csproj|c:\\users\\yasar\\source\\repos\\patika\u002B\\week5\\patika_w5_kapanis\\patika_w5_kapanis\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60B66691-2798-40B1-B687-D9563E5900A4}|patika_w5_Kapanis\\patika_w5_Kapanis.csproj|solutionrelative:patika_w5_kapanis\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week5\\patika_w5_Kapanis\\patika_w5_Kapanis\\Car.cs",
+              "RelativeDocumentMoniker": "patika_w5_Kapanis\\Car.cs",
+              "ToolTip": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week5\\patika_w5_Kapanis\\patika_w5_Kapanis\\Car.cs",
+              "RelativeToolTip": "patika_w5_Kapanis\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:21:08.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week5\\patika_w5_Kapanis\\patika_w5_Kapanis\\Program.cs",
+              "RelativeDocumentMoniker": "patika_w5_Kapanis\\Program.cs",
+              "ToolTip": "C:\\Users\\yasar\\source\\repos\\Patika\u002B\\Week5\\patika_w5_Kapanis\\patika_w5_Kapanis\\Program.cs",
+              "RelativeToolTip": "patika_w5_Kapanis\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADwv0kAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:20:30.228Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

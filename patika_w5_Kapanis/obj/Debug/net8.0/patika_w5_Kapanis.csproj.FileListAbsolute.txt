@@ -1,0 +1,14 @@
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\bin\Debug\net8.0\patika_w5_Kapanis.exe
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\bin\Debug\net8.0\patika_w5_Kapanis.deps.json
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\bin\Debug\net8.0\patika_w5_Kapanis.runtimeconfig.json
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\bin\Debug\net8.0\patika_w5_Kapanis.dll
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\bin\Debug\net8.0\patika_w5_Kapanis.pdb
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.AssemblyInfoInputs.cache
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.AssemblyInfo.cs
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.csproj.CoreCompileInputs.cache
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.dll
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\refint\patika_w5_Kapanis.dll
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.pdb
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\patika_w5_Kapanis.genruntimeconfig.cache
+C:\Users\yasar\source\repos\Patika+\Week5\patika_w5_Kapanis\patika_w5_Kapanis\obj\Debug\net8.0\ref\patika_w5_Kapanis.dll
