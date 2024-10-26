@@ -30,6 +30,9 @@ Uygulamanın sonunda
  
  3- İsmi 'A' ile başlayan filmler ve imdb puanları listelensin.
 
+## Doğru Çalışınca Oluşan Ekran Görüntüsü
+![resim](https://github.com/user-attachments/assets/0b296abb-a49d-4161-b97b-f5501a1815cb)
+
 
 
 ## Kod 
