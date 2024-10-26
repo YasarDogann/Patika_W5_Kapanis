@@ -48,29 +48,24 @@
                     }
                     else if (choose == 'H')  // eğer girilen değer H ise;
                     {
-                        
-                        foreach (var car in cars)  // Kaydedilen arabaları yazdır
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Programdan Çıkılıyor\r\n");  // Mesaj göster
+                        Console.ResetColor();
+
+
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("\r\n----- ÜRETİLEN ARABA/ARABALAR -----");
+                        Console.ResetColor();
+
+                        foreach (var car in cars)
                         {
-                            if(cars.Count == 0) //  Eğer hiç kaydetmeden Hayır derse ekranda Üretilen arabalar yazısı gözükmesin diye kontrol
-                            {
-                                Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("Programdan Çıkılıyor\r\n");  // Mesaj göster
-                                Console.ResetColor();
-                                Environment.Exit(0);
-                            }
-                            else // Kaydedilen araba varsa yani listede en az 1 nesne var ise ;
-                            {
-                                Console.ForegroundColor= ConsoleColor.Green;
-                                Console.WriteLine("\r\n----- ÜRETİLEN ARABA/ARABALAR -----");
-                                Console.ResetColor();
-                                Console.WriteLine($"" +
-                                $"Seri Numarası: {car.SerialKey}, " +
-                                $"Marka: {car.Brand}, " +
-                                $"Model: {car.Model}, " +
-                                $"Renk: {car.Color}, " +
-                                $"Kapı Sayısı: {car.NumberOfDoors}, " +
-                                $"Üretim Tarihi: {car.ProductionDate}");
-                            }  
+                            Console.WriteLine($"" +
+                            $"Seri Numarası: {car.SerialKey}, " +
+                            $"Marka: {car.Brand}, " +
+                            $"Model: {car.Model}, " +
+                            $"Renk: {car.Color}, " +
+                            $"Kapı Sayısı: {car.NumberOfDoors}, " +
+                            $"Üretim Tarihi: {car.ProductionDate}");
                         }
                         Environment.Exit(0);
                     }
