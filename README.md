@@ -40,134 +40,107 @@ Program akışı:
   - evet ise program akışında 2. aşamaya geri dönünüz ve yeni bir araba üretip listeye ekleyiniz.
   - Cevap hayır ise arabalar listesinin bütün elemanlarının Seri numaralarını ve markalarını yazdırınız
 
-  
 
 
-
-
-
-## Doğru Çalışınca Oluşan Ekran Görüntüsü
+## Doğru Çalıştığında: 
 ![resim](https://github.com/user-attachments/assets/0b296abb-a49d-4161-b97b-f5501a1815cb)
-
 
 
 ## Kod 
 ```csharp
 
-    // Film adı ve IMDb puanını tutan sınıf özellikleri
-    public class Film
-    {
-        public string Name { get; set; }
-        public double ImdbScore { get; set; }
-    }
+public class Car
+{
+    public DateTime ProductionDate {  get; set; }
+    public string SerialKey { get; set; }
+    public string Brand {  get; set; }  
+    public string Model { get; set; }
+    public string Color { get; set; }
+    public int NumberOfDoors { get; set; }
 
-    public class Imdb
-    {
-        // Filmleri saklamak için kullanılan bir List yapısı
-        private List<Film> films = new List<Film>();
-
-        // Film ekleme fonksiyonu
-        public void AddFilm()
-        {
-            bool isContinue = true;  // Kullanıcı devam etmek istediği sürece döngü devam edecek
-
-            while (isContinue)
-            {
-                Film film = new Film();   // yeni bir film nesnesi oluşturuldu Polymorphism
-
-                Console.Write("Film Adı Gir: ");  // kullanıcıdan film adı alındı
-                film.Name = Console.ReadLine();  // film'in Name Property'sine atandı
-
-                Console.Write("IMDB Puanı Gir: ");   // imdb puanı alındı
-                if (double.TryParse(Console.ReadLine(), out double score)) // TryParse ile kontrol yapıldı
-                {
-                    film.ImdbScore = score;  // Eğer double bir sayı ise film'in ImdbScore propertisine atanacak
-                }
-                else
-                {
-                    Console.WriteLine("Geçersiz IMDB puanı! Lütfen sayı girin."); //değilse uyarı vericek ve tekrar soraca
-                    continue;
-                }
-
-                films.Add(film);  // oluşturulan film nesnesi ad ve imdb puanı alındıktan sonra films listesine eklendi
-
-                Console.Write("Yeni Film Eklemek İstiyor Musunuz? (E / H): ");  // devam edip etmeyeceği soruluyor
-                char response = char.Parse(Console.ReadLine().ToUpper());
-
-                if (response != 'E')    // eğer E karakteri harici bişey girerse döngü false olucak ve sonlanacak
-                    isContinue = false;
-            }
-        }
-
-        // Bütün filmleri listeleme fonksiyonu
-        public void PrintAllFilms()
-        {
-            foreach (var film in films)  // Foreach döngüsü ile kaydedilen films listesi içinde geziyoruz ve her birini ekrana yazdırıyoruz.
-            {
-                Console.WriteLine($"Film Adı: {film.Name}, IMDb Puanı: {film.ImdbScore}");
-            }
-        }
-
-        // IMDb puanı 4 ile 9 arasında olan filmleri listeleme fonksiyonu
-        public void PrintFilmsWithScoreBetween4And9()
-        {
-            var selectedFilms = films.Where(f => f.ImdbScore >= 4 && f.ImdbScore <= 9).ToList();  // Belirtilen puan arasında olan filmleri listele
-
-            if (selectedFilms.Count == 0)    // Eğer film bulunamazsa mesaj döndürür
-            {
-                Console.WriteLine("Bu aralıkta film bulunamadı.");
-            }
-            else
-            {
-                foreach (var film in selectedFilms)   // uygun olan filmleri ekrana yazdırır
-                {
-                    Console.WriteLine($"Film Adı: {film.Name}, IMDb Puanı: {film.ImdbScore}");
-                }
-            }
-        }
-
-        // İsmi 'A' harfi ile başlayan filmleri listeleme fonksiyonu
-        public void PrintFilmsStartingWithA()
-        {
-            foreach (var film in films)    // films listesinde teker teker geziyoruz
-            {
-                if (film.Name.StartsWith("A")|| film.Name.StartsWith("a"))  // A veya a ile başlayan varsa ekrana göstericel
-                {
-                    Console.WriteLine($"Film Adı: {film.Name}, IMDb Puanı: {film.ImdbScore}");
-                }
-            }
-        }
-    }
+}
 ```
-Class ve methodlar
+Class.
 
 ```csharp
 static void Main(string[] args)
 {
-    Imdb imdbList = new Imdb();    // yeni bir imdb listesi adında nesne ürettik
-    imdbList.AddFilm();   // AddFilm methodunu çağırarak filmleri tanımladık
+    bool isContinue = true;  // Sonsuz Döngü kontrol için değişken
+    List<Car> cars = new List<Car>();  // Oluşturulan araba nesnesini ekleyeceğimiz Liste
 
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("\n--- Bütün Filmler ---");
-    Console.ResetColor();
+    //Sonsuz Döngü başlatıldı
+    while (isContinue)
+    {
+        Console.ForegroundColor = ConsoleColor.Red; // Sorulan sorunun rengi Kırmızı ayarlandı
+        Console.Write("Araba Üretmek İstiyor Musunuz ?(E- Evet / H- Hayır): ");
+        Console.ResetColor();
+        if (char.TryParse(Console.ReadLine().ToUpper(), out char choose)) // E veya H cevabı alınırsa İf Bloğuna giriyor. Büyük harf yapıyor otomatik
+        {
+            if (choose == 'E') // Eğer seçim e ise ;
+            {
 
-    imdbList.PrintAllFilms();   // Oluşturulan bütün filmleri ekranda göstericek
+                Car car = new Car(); // Araba Class'ından araba nesnesini oluşturdu
+                Console.Write("Arabanın Seri Numarası: ");  // seri numarası kullanıcıya soruldu
+                car.SerialKey = Console.ReadLine(); // kullanıcının girdiği değer Araba nesnesinin SerialKey prop'una atandı
+
+                Console.Write("Arabanın Markası: ");
+                car.Brand = Console.ReadLine();  // marka atandı
+
+                Console.Write("Arabanın Modeli: ");
+                car.Model = Console.ReadLine(); // model atandı
+
+                Console.Write("Arabanın Rengi: ");
+                car.Color = Console.ReadLine(); // Renk atandı
+
+            EnterNumberOfDoors:    // Goto için anahtar kelime tanımlandı. KapıNumarasıGir:
+                Console.Write("Kapı Sayısı: ");
+                if (!int.TryParse(Console.ReadLine(), out int doors) || doors < 2 || doors > 5) // Eğer Girilen değer 2'den küçük VEYA 5'den büyük VEYA Sayı değilse
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Geçersiz Giriş! Lütfen 2 ile 5 Arasında Bir Sayı Girin"); // Hata ver
+                    Console.ResetColor();
+                    goto EnterNumberOfDoors; // goto ile tekrardan soruyu soracak
+                }
+                car.NumberOfDoors = doors; // geçerli girişş yapılınca girilen değer properties'e atandı.
+
+                car.ProductionDate = DateTime.Now; // Tarih alındı
+
+                cars.Add(car);  // Oluşturulan nesne  cars listesine eklendi
+            }
+            else if (choose == 'H')  // eğer girilen değer H ise;
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Programdan Çıkılıyor\r\n");  // Mesaj göster
+                Console.ResetColor();
 
 
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("\n--- IMDb Puanı 4 ile 9 Arasında Olan Filmler ---");
-    Console.ResetColor();
-    imdbList.PrintFilmsWithScoreBetween4And9();  // 4 ile 9 arasında olan filmleri ekranda göstericek
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\r\n----- ÜRETİLEN ARABA/ARABALAR -----");
+                Console.ResetColor();
 
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("\n--- 'A' Harfi ile Başlayan Filmler ---");
-    Console.ResetColor();
-    imdbList.PrintFilmsStartingWithA(); // A ile başlayan filmleri ekranda göstericek
+                foreach (var car in cars)
+                {
+                    Console.WriteLine($"" +
+                    $"Seri Numarası: {car.SerialKey}, " +
+                    $"Marka: {car.Brand}, " +
+                    $"Model: {car.Model}, " +
+                    $"Renk: {car.Color}, " +
+                    $"Kapı Sayısı: {car.NumberOfDoors}, " +
+                    $"Üretim Tarihi: {car.ProductionDate}");
+                }
+                Environment.Exit(0);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Hatalı Seçim yaptınız tekrar deneyin");
+        }
+    }
 
-    Console.ReadKey();
+    Console.Read();
 }
 ```
-main method ve nesne oluşturma
+
 
 
 
