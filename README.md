@@ -18,6 +18,7 @@ Bir araba fabrikasonda araba üretiyoruz.
 Araba -> Üretim Tarihi, Seri Numarası, Marka, Model, Renk, Kapı Sayısı
 
 Yukarıdaki propertylere sahip bir Araba classı tanımlayalım.
+
 Program akışı:
 1-  Konsol ekranından kullanıcıya araba üretmek isteyip istemediğini soralım. Üretmek istiyorsa e, istemiyorsa h harfi ile yanıt versin. Büyük - Küçük harf duyarlılığını ortadan kaldıralım. Geçersiz bir cevap verirse, bu cevabın geçersiz olduğunu söyleyerek aynı soruyu tekrar yöneltelim.
 2- Kullanıcının cevabı hayır programı sonlandıralım, evet ise bir araba nesnesi üretip özelliklerini konsol ekranından kullanıcıya girdirelim.
