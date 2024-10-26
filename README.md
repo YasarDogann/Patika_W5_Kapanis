@@ -25,10 +25,8 @@ Program akışı:
   - Üretmek istiyorsa e, istemiyorsa h harfi ile yanıt versin.
   - Büyük - Küçük harf duyarlılığını ortadan kaldıralım.
   - Geçersiz bir cevap verirse, bu cevabın geçersiz olduğunu söyleyerek aynı soruyu tekrar yöneltelim.
-  
 2- Kullanıcının cevabı hayır programı sonlandıralım.
-  - evet ise bir araba nesnesi üretip özelliklerini konsol ekranından kullanıcıya girdirelim.
-    
+  - evet ise bir araba nesnesi üretip özelliklerini konsol ekranından kullanıcıya girdirelim.    
 3- Üretim Tarihi değeri araba üretilirken otomatik olarak o an olarak atanacak.
 4- Kapı Sayısı için sayısal olmayan bir değer atanılmaya çalışılırsa
   - programın exception fırlatmasını engelleyelim, uyarı mesajı verelim ve kullanıcıyı yeniden o satıra yönlendirelim. (goto komutunu araştırınız.)
